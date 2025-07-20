@@ -1,0 +1,314 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<style>
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+</style>
+</head>
+<body>
+  <main>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-8 bg-danger f" >
+                <marquee style="height: 25px; line-height: 25px;"><p   class="text-light">New Full stack Batch starts on March 10</p></marquee>
+            </div>
+            <div class="col-4 bg-danger d-flex align-items-center " >
+             <i class="fa-brands fa-facebook xl" style="font-size: 20px; color: white; margin-left: 150px;"></i>
+             <i class="fa-brands fa-whatsapp " style=" font-size: 20px; color: white
+             ; margin-left: 30px;"></i>
+             <i class="fa-brands fa-linkedin-in" style=" font-size: 20px; color: white
+             ; margin-left: 30px;"></i>
+             <i class="fa-brands fa-instagram"  style=" font-size: 20px; color: white
+
+             ; margin-left: 30px;" ></i>
+            </div> 
+        </div>
+    </div>
+    <div class="container-fluid"  style="position: sticky; z-index: 99999; top: 0;">
+        <div class="row">
+            <div class="col-2 " style="background-color: #f7f9fa;" >
+              <img src="https://a2zithub.org/training/uploads/170375695842637743.png" style="height: 70px; width: 80px;">
+            </div>
+            <div class="col-10 " style="margin: 0; padding: 0%;">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto navbar-expand-lg">
+      <li class="nav-item active">
+        <a class="nav-link" href="a2.html"><h4 style="font-weight: 15;">Home</h4> </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  " href="about.html"><h4 style="font-weight: 15;">Abouts</h4></a>
+      </li>  <li class="nav-item">
+        <a class="nav-link" href="cources.html"><h4 style="font-weight: 15;">Courses</h4></a>
+      </li>  <li class="nav-item">
+        <a class="nav-link" href="#"><h4 style="font-weight: 15;">Batches</h4></a>
+      </li>
+      </li>  <li class="nav-item">
+        <a class="nav-link" href="#"><h4 style="font-weight: 15;">Internship</h4></a>
+      </li>
+      </li>  <li class="nav-item">
+        <a class="nav-link" href="certi.html"><h4 style="font-weight: 15;">Certifications</h4></a>
+      </li>
+      </li>  <li class="nav-item">
+        <a class="nav-link" href="#"><h4 style="font-weight: 15;">Placements</h4></a>
+      </li>
+      </li>  <li class="nav-item">
+        <a class="nav-link" href="ajobs.html"><h4 style="font-weight: 15;">Jobs</h4></a>
+      </li>
+      </li>  <li class="nav-item">
+        <a class="nav-link" href="#"><h4 style="font-weight: 15;">Blogs</h4></a>
+      </li>
+      </li>  <li class="nav-item">
+        <a class="nav-link" href="acontact.html"><h4 style="font-weight: 15;">Contacts</h4></a>
+      </li>
+     <button class="bg-danger text-light ml-3 glow-on-hover">
+     <h4 style="font-weight: 20;">Get career Guidance</h4>
+     </button>
+</nav>
+            </div>
+        </div>
+    </div>
+
+
+
+
+     <div class="background" style="width: 1650px; height: 700px; background-color: aqua;">
+       <div class="background_left" style="height: 100%; width: 1000px; background-color: white; float: left;">
+       <p style="color: black; font-size: 50px; margin-top: 200px; margin-left: 200px;">We Are Provide</p>
+       <p style="color: black; font-size: 80px; margin-left: 200px; margin-top: -20px;">Traning & Internship</p>
+       <p style="color: black; font-size: 50px; margin-left: 200px;">With 100% Placement</p>
+       <button style="height: 50px; width: 200px; margin-left: 210px; background-color: red; color: white;">Connect on whatsapp</button>
+       </div>
+       <div class="background_right" style="height: 100%; width: 650px; background-color: white
+       ; float: left;">
+          <div class="form" style="height: 70%; width: 450px; background-color: white
+          ; margin-left: 90px; margin-top: 100px; box-shadow: 5px 5px 5px 5px black;">
+         <form style="text-align: center;">
+            <fieldset>
+                <legend style="text-align: center; margin-top: 150px; color: wh;"><h2 style="margin-top: 20px">Contact us Now!</h2></legend>
+                <input type="text" placeholder="Enter Your Name" style="height: 50px; width: 360px; margin-left: 30px; padding-left: 30px;">
+                 <input type="text" placeholder="Enter Your Email" style="height: 50px; width: 360px; margin-left: 30px; margin-top: 30px; padding-left: 30px;">
+
+                  <input type="text" placeholder="Enter Your Mobile" style="height: 50px; width: 360px; margin-left: 30px; margin-top: 30px; padding-left: 30px;">
+                    <select name="cars" id="cars" style="height: 50px; width: 360px; margin-left: 30px; margin-top: 30px;">
+                  <option value="volvo" selected style="height: 50px; width: 360px; margin-left: 30px;padding-left: 30px; margin-top: 30px;">Select Courses</option>
+    <option value="saab">Online training</option>
+    <option value="opel">Classroom training</option>
+    <option value="audi">Internship</option>
+  </select>
+            </fieldset>
+         </form>
+         <button style="height: 50px; width: 100px; margin-top: 20px; margin-left: 170px; background-color: red; color: white; padding: 0px;">Submit</button>
+          </div>
+       </div>
+     </div>
+     <div class="why" style="height: 900px; width: 100%; background-color: black; margin: 0px;">
+        <div class="why_ch" style="height: 300px; width: 70%; background-color: black; margin-left: 150px;">
+ <p style="font-size: 50px; font-weight: bolder; color: white;">Why Choose Us</p>
+ <p style="font-size: 20px; color: white; padding: 0%;">We have highly skilled engineers with excellent technical knowledge and experience in using the latest software standards. We have built a large pool of knowledge that we apply to deliver solutions that meet client's needs, expectations and budget. By putting our clients at the heart of everything we do, we are proud that we are still supporting our very first business client.</p>
+ <button style="height: 50px; width: 100px; margin-left: 460px; margin-top: 20px; background-color: red; color: white;">Learn More</button>
+        </div>
+        
+        <div class="know" style="height:600px; width: 100%; background-color: black; " >
+             <div class="know_more" style=" height: 60%; width: 25%; background-color: white; float: left;margin-top: 100px; margin-left: 150px;" >
+                <i class="fa-solid fa-chart-simple" style="font-size: 60px; margin-left: 180px; margin-top: 50px;"></i>
+                <h2 style="margin-left: 110px; margin-top: 20px;">Class Training</h2>
+                <p style="justify-content: center; margin-top: 20px; font-size: 
+                20px; padding: 10px; margin: 0;">Classroom training is an instructional method where the course content and learning material are taught in-person to a group of participants by the domain</p>
+             </div>
+
+
+
+             <div class="know_more" style=" height: 60%; width: 25%; background-color:  white; float: left; margin-top: 100px; margin-left: 30px;" >
+                <i class="fa-solid fa-address-book" style="font-size: 60px; margin-left: 180px; margin-top: 50px;"></i>
+                <h2 style="margin-left: 60px; margin-top: 20px;">Interview Prparation</h2>
+                <p style="justify-content: center; margin-top: 20px; font-size:  
+                20px; padding: 10px;">We develop and manage projects for different scales and applications like dairy, beverage and prepared food processing. In all the projects we have completed till now, we have started with</p>
+             </div>
+
+
+
+             <div class="know_more" style=" height: 60%; width: 25%; background-color:  white; float: left; margin-top: 100px; margin-left: 30px;" >
+                   <i class="fa-solid fa-street-view" style="font-size: 60px; margin-left: 180px; margin-top: 50px;"></i>
+                <h2 style="margin-left: 60px; margin-top: 20px;">100% Job Guarantee</h2>
+                <p  style="justify-content: center; margin-top: 20px; font-size: 
+                20px; justify-self: center; padding: 10px;">We serve 100% job guarantee courses With end to end placement assistance.</p>
+             </div>
+        </div>
+     </div>
+     <div  class="str" style="height: 250px; width: 100%; background-color: aliceblue;">
+       <div class="str1" style="height: 100%; width: 16%; background-color: white
+       ; float: left;">
+
+       </div>
+       <div class="str2" style="height: 100%; width: 16%; background-color: white; float: left;">
+ <i class="fa-regular fa-user" style="font-size: 50px; margin-left: 40px; margin-top: 90px; color: brown;"></i>
+ <h1 style="margin-top: -80px; margin-left: 130px; font-size: 50px;">4000</h1>
+ <p style="margin-left: 120px; font-size: 19px;">Students trained</p>
+       </div>
+
+
+       <div class="str3" style="height: 100%; width: 16%; background-color: white; float: left;">
+<i class="fa-solid fa-star" style="font-size: 50px; margin-left: 40px; margin-top: 90px; color: brown;"></i>
+<h1 style="margin-top: -80px; margin-left: 130px; font-size: 50px;">25</h1>
+ <p style="margin-left: 120px; font-size: 19px;">Courses</p>
+       </div>
+
+
+
+       <div class="str4" style="height: 100%; width: 16%; background-color: white; float: left;">
+<i class="fa-solid fa-building"style="font-size: 50px; margin-left: 40px; margin-top: 90px; color: brown;"></i>
+<h1 style="margin-top: -80px; margin-left: 130px; font-size: 50px;">250</h1>
+ <p style="margin-left: 120px; font-size: 19px;">Hiring Courses</p>
+       </div>
+
+
+
+       <div class="str5" style="height: 100%; width: 16%; background-color: white; float: left;">
+<i class="fa-solid fa-chart-column" style="font-size: 50px; margin-left: 40px; margin-top: 90px; color: brown;"></i>
+<h1 style="margin-top: -80px; margin-left: 130px; font-size: 50px;">850</h1>
+ <p style="margin-left: 120px; font-size: 19px;">Placements</p>
+       </div>
+       <div class="str6" style="height: 100%; width: 16%; background-color: white; float: left;">
+
+       </div>
+     </div>
+
+
+
+  
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-12 bg-light text-light">
+<h1>1</h1>
+        </div>
+    </div>
+<div class="container-fluid bg-dark">
+      <div class="container bg-dark
+ ">
+    <div class="row">
+        <div class=" col-sm-8 col-xl-3 ">
+         <pre style=" font-size: 16px;color: white; font-family: Arial, Helvetica, sans-serif;">
+<pre style="font-size: 20px; color: white; font-family: Arial, Helvetica, sans-serif; margin-top: 20px; padding: 0%;">Useful Links</pre><p style="margin-top: 40px;">Home
+About us
+FAQ
+Terms of service
+Privacy policy</p>
+         </pre>
+        </div>
+
+
+           <div class="col-sm-8 col-xl-3 ">
+         <pre style=" font-size: 16px; color: white; margin-top: 0px; font-family: Arial, Helvetica, sans-serif;"><pre style="font-size: 20px; color: white; font-family: Arial, Helvetica, sans-serif;margin-top: 20px;">Our Services</pre>
+Classroom training
+Interview Preparation
+100% Job Guarantee
+Global Certification
+Degital Classroom
+         </pre>
+        </div>
+
+
+            <div class="col-sm-8 col-xl-3">
+         <p style=" font-size: 20px; color: white; margin-top: 0px; font-family: Arial, Helvetica, sans-serif;"><pre style="font-size: 20px; color: white; font-family: Arial, Helvetica, sans-serif;margin-top: 20px;">Contact Us </p>
+<p style="font-size: 16px; padding: 0%;">Contact Us 3rd Floor Lendkar
+Apartment Balikashram Rd,near 
+Kamala Ayurvedic Hospital<p style="font-size: 16px;">Ahmednagar Maharashtra 414001
+Phone: 09011144920
+Email: a2zinfotech@gmail.com
+         </p>
+        </div>
+
+
+             <div class="col-sm-8 col-xl-3 ">
+         <p style=" font-size: 16px; color: white; margin-top: 0px; font-family: Arial, Helvetica, sans-serif;"><pre style="font-size: 20px; color: white; font-family: Arial, Helvetica, sans-serif;margin-top: 20px;">About A2Z IT HUB PVT </p><p style="font-size: 16px;">
+A2Z IT HUB PVT LTD was <br>founded  in 2018 with a passion <br>for create Digital coding World.<br>Since then, we have grown into 
+a dynamic team of skilled <br>professionals dedicated to making <br>a positive impact through
+technology. 
+</p><br><pre><i class="fa-brands fa-facebook" style="font-size: 20px;  color: white;"></i><i class="fa-brands fa-whatsapp ml-3" style="font-size: 20px; ; color: white;"></i><i class="fa-brands fa-instagram ml-3" style="font-size: 20px; ; color: white;"></i><i class="fa-brands fa-google ml-3" style="font-size: 20px; ; color: white;"></i></pre>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xl-12 bg-dark text-light text-center">
+     <p>© Copyright A2Z IT HUB. All Rights Reserved Designed by A2Z IT HUB PVT LTD</p>
+    </div>
+  </div>
+   </div>
+</div>
+</body>
+

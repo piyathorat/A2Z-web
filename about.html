@@ -12,134 +12,87 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-.glow-on-hover {
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-}
-
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
-
-.glow-on-hover:active {
-    color: #000
-}
-
-.glow-on-hover:active:after {
-    background: transparent;
-}
-
-.glow-on-hover:hover:before {
-    opacity: 1;
-}
-
-.glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
+@media (max-width: 768px) {
+   .medNavbar{
+    margin-top: 0px !important;
+  }
+   .medCoursesName{
+    margin-top: 15% !important;
+    display: flex;
+    justify-content: center;
+    background-color: transparent !important;
+  }
+ .medCoursesName h3{
+    background-color: red;
+    width: 50%;
+    padding: 10px 0px;
+    border-radius: 10px 0px 10px 0px;
+    border: 3px solid black;
+    text-transform: capitalize !important;
+  }
+.medCoursesName{
+    margin-top: 15% !important;
+    display: flex;
+    justify-content: center;
+    background-color: transparent !important;
+  } }
 </style>
 </head>
 <body>
-  <main>
- <div class="container-fluid">
-    <div class="row">
-       
-        <div class="col-md-8 d-none d-md-block bg-danger">
-            <marquee style="height: 25px; line-height: 25px;">
-                <p class="text-light m-0">New Full stack Batch starts on March 10</p>
-            </marquee>
-        </div>
-
-
-        <div class="col-12 col-md-4 bg-danger d-flex align-items-center justify-content-center">
-            <i class="fa-brands fa-facebook" style="font-size: 20px; color: white; margin: 0 10px;"></i>
-            <i class="fa-brands fa-whatsapp" style="font-size: 20px; color: white; margin: 0 10px;"></i>
-            <i class="fa-brands fa-linkedin-in" style="font-size: 20px; color: white; margin: 0 10px;"></i>
-            <i class="fa-brands fa-instagram" style="font-size: 20px; color: white; margin: 0 10px;"></i>
-        </div>
-    </div>
-</div>
-<!-- Navbar -->
-<div class="container-fluid" style="position: sticky; top: 0; z-index: 99999;">
-  <div class="row align-items-center no-gutters">
-    <!-- Logo -->
-    <div class="col-3 col-md-2 text-center bg-white">
-      <img src="https://a2zithub.org/training/uploads/170375695842637743.png" class="img-fluid" style="height: 60px; width: auto; padding-bottom: 10px;" />
-    </div>
-
-    <!-- Navbar -->
-    <div class="col-9 col-md-10 " style="padding-top: -10px;">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand d-lg-none" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item "><a class="nav-link h5" href="index.html">Home</a></li>
-            <li class="nav-item active"><a class="nav-link h5" href="about.html">Abouts</a></li>
-            <li class="nav-item"><a class="nav-link h5" href="cources.html">Courses</a></li>
-            <li class="nav-item"><a class="nav-link h5" href="#">Batches</a></li>
-            <li class="nav-item"><a class="nav-link h5" href="#">Internship</a></li>
-            <li class="nav-item"><a class="nav-link h5" href="certi.html">Certifications</a></li>
-            <li class="nav-item"><a class="nav-link h5" href="#">Placements</a></li>
-            <li class="nav-item"><a class="nav-link h5" href="ajobs.html">Jobs</a></li>
-            <li class="nav-item"><a class="nav-link h5" href="#">Blogs</a></li>
-            <li class="nav-item"><a class="nav-link h5" href="acontact.html">Contacts</a></li>
-          </ul>
-          <button class="btn btn-danger glow-on-hover ml-lg-3 mt-2 mt-lg-0">Get Career Guidance</button>
-        </div>
-      </nav>
-    </div>
+ <div class="container-fluid p-0">
+  <!-- ----section-1--- -->
+    <div class="row fixed-top mb-5 d-none d-md-flex">
+  <div class="col-md-9 bg-danger">
+    <marquee style="height: 25px; line-height: 25px;">
+      <p class="text-light mb-0">New Full stack Batch starts on March 10</p>
+    </marquee>
+  </div>
+  <div class="col-md-3 bg-danger d-flex align-items-center justify-content-end">
+    <i class="fa-brands fa-facebook" style="font-size: 20px; color: white; margin: 0 10px;"></i>
+    <i class="fa-brands fa-whatsapp" style="font-size: 20px; color: white; margin: 0 10px;"></i>
+    <i class="fa-brands fa-linkedin-in" style="font-size: 20px; color: white; margin: 0 10px;"></i>
+    <i class="fa-brands fa-instagram" style="font-size: 20px; color: white; margin: 0 10px;"></i>
   </div>
 </div>
-<!-- Navbar End -->
+
+    <!-- ----section-2--- -->
+   <div class="row text-center   fixed-top medNavbar bg-light" style="margin-top: 30px;">
+          <div class="col-3 col-md-2 text-center ">
+            <img src="https://a2zithub.org/training/uploads/170375695842637743.png" class="img-fluid"
+             style="height: 60px; width: auto; padding-top: 10px;" />
+          </div>
+
+          <div class="col-9 col-md-10 " >
+            <nav class="navbar navbar-expand-lg navbar-light ">
+              <a class="navbar-brand d-lg-none" href="#"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item "><a class="nav-link h5" href="index.html">Home</a></li>
+                  <li class="nav-item active"><a class="nav-link h5" href="about.html">Abouts</a></li>
+                  <li class="nav-item "><a class="nav-link h5" href="cources.html">Courses</a></li>
+                  <li class="nav-item"><a class="nav-link h5" href="#">Batches</a></li>
+                  <li class="nav-item"><a class="nav-link h5" href="#">Internship</a></li>
+                  <li class="nav-item "><a class="nav-link h5" href="certi.html">Certifications</a></li>
+                  <li class="nav-item"><a class="nav-link h5" href="#">Placements</a></li>
+                  <li class="nav-item"><a class="nav-link h5" href="ajobs.html">Jobs</a></li>
+                  <li class="nav-item"><a class="nav-link h5" href="#">Blogs</a></li>
+                  <li class="nav-item"><a class="nav-link h5" href="acontact.html">Contacts</a></li>
+                </ul>
+                <button class="btn btn-danger">Get Career Guidance</button>
+              </div>
+            </nav>
+          </div>
+  </div>  
+  <!-- ----section-3--- -->
+          <div class="bg-secondary text-dark text-center py-1 medCoursesName " style="margin-top: 10%;margin-bottom: 15px;">
+            <h3 style="color: white;">ABOUT US</h3>
+    </div>  
 
 
-
-
-<div class="container-fluid text-center">
-    <div class="row">
-        <div class="col-12 bg-secondary text-dark text-center">
-            <h1 style="color: white;">ABOUT US</h1>
-        </div>
-    </div>
-</div>
 
 <div class="container py-4">
   <div class="row align-items-center">
@@ -213,10 +166,10 @@
         </p>
 
         <div class="d-flex gap-3 fs-5">
-          <a href="#" class="text-light"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#" class="text-light"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="#" class="text-light"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" class="text-light"><i class="fa-brands fa-google"></i></a>
+          <a href="#" class="text-light"><i class="fa-brands fa-facebook ml-1"></i></a>
+          <a href="#" class="text-light"><i class="fa-brands fa-whatsapp ml-1"></i></a>
+          <a href="#" class="text-light"><i class="fa-brands fa-instagram ml-1"></i></a>
+          <a href="#" class="text-light"><i class="fa-brands fa-google ml-1"></i></a>
         </div>
       </div>
 
@@ -228,12 +181,5 @@
       © Copyright A2Z IT HUB. All Rights Reserved — Designed by A2Z IT HUB PVT LTD
     </small>
   </div>
-  <script>
-  // Auto-collapse navbar when a link is clicked (on small screens)
-  $(document).ready(function () {
-    $('.navbar-nav>li>a').on('click', function(){
-      $('.navbar-collapse').collapse('hide');
-    });
-  });
-</script>
+
 </footer>
